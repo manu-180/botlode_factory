@@ -1,0 +1,70 @@
+name: botlode_factory
+description: "BotLode Factory - Crea tu propia fábrica de bots IA. Escala tu negocio con inteligencia artificial."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Navigation
+  go_router: ^14.6.3
+
+  # Backend
+  supabase_flutter: ^2.8.4
+
+  # Animations
+  rive: ^0.13.0
+  flutter_animate: ^4.5.2
+
+  # UI
+  google_fonts: ^6.2.1
+  url_launcher: ^6.3.1
+  flutter_colorpicker: ^1.1.0
+  font_awesome_flutter: ^10.8.0
+  vector_math: ^2.1.4
+  
+  # Video
+  video_player: ^2.9.2
+  video_player_web: ^2.3.3
+  
+  # Local Storage
+  shared_preferences: ^2.3.3
+  
+  # Utils
+  uuid: ^4.5.1
+  
+  # Environment Variables
+  flutter_dotenv: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  riverpod_generator: ^2.6.5
+  build_runner: ^2.4.14
+  flutter_launcher_icons: ^0.14.2
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/animations/
+    - assets/images/
+    - assets/icons/
+    - assets/videos/
+    - .env
+
+flutter_launcher_icons:
+  web:
+    generate: true
+    image_path: "assets/icons/favicon.png"
+    background_color: "#000000"
+    theme_color: "#000000"
