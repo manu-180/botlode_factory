@@ -7,15 +7,22 @@ class NavigationConfig {
   NavigationConfig._();
 
   /// Items de navegación principal.
+  /// Orden: home, bot, factory, tutorial
   static const List<NavItem> mainNavItems = [
     NavItem(
-      label: 'Inicio',
+      label: 'Home',
       route: AppConstants.routeHome,
       icon: Icons.home_outlined,
       activeIcon: Icons.home,
     ),
     NavItem(
-      label: 'Fábrica',
+      label: 'Bot',
+      route: AppConstants.routeBot,
+      icon: Icons.smart_toy_outlined,
+      activeIcon: Icons.smart_toy,
+    ),
+    NavItem(
+      label: 'Factory',
       route: AppConstants.routeFactory,
       icon: Icons.factory_outlined,
       activeIcon: Icons.factory,
