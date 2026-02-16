@@ -18,21 +18,51 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BotLode Factory - Genera ingresos con IA. Producto listo para vender, sin inversión. Crea tu fábrica de bots y automatiza ventas 24/7. Escala tu negocio con inteligencia artificial.">
+  <meta name="keywords" content="generar ingresos, ingresos pasivos, producto listo para vender, negocio listo, sin inversión, escalar ingresos, automatizar ventas, ingresos 24/7, fábrica de bots, crear empleados virtuales, negocio automatizado, ingresos con IA, vender sin invertir, sistema de ingresos">
+  <meta name="author" content="BotLode">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://botlode.com/">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="botlode_factory">
+  <meta name="apple-mobile-web-app-title" content="BotLode Factory">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>botlode_factory</title>
+  <title>BotLode Factory - Genera Ingresos con IA</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+    const path = window.location.pathname;
+    const head = document.getElementsByTagName('head')[0];
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      head.appendChild(canonical);
+    }
+    if (path === '/' || path === '') {
+      canonical.setAttribute('href', 'https://botlode.com/');
+    } else if (path.startsWith('/bot')) {
+      canonical.setAttribute('href', 'https://botlode.com/bot');
+    } else if (path.startsWith('/factory')) {
+      canonical.setAttribute('href', 'https://botlode.com/factory');
+    } else if (path.startsWith('/tutorial')) {
+      canonical.setAttribute('href', 'https://botlode.com/tutorial');
+    } else if (path.startsWith('/demo')) {
+      canonical.setAttribute('href', 'https://botlode.com/demo');
+    } else {
+      canonical.setAttribute('href', 'https://botlode.com/');
+    }
+  </script>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

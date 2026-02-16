@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /
+Allow: /$
+Allow: /bot$
+Allow: /factory$
+Allow: /tutorial$
+Allow: /demo$
+Sitemap: https://botlode.com/sitemap.xml
