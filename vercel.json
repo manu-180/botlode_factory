@@ -1,6 +1,6 @@
 {
-  "buildCommand": "flutter build web --release",
-  "outputDirectory": "build/web",
+  "buildCommand": "flutter build web --release && mkdir -p docs && cp -r build/web/* docs/",
+  "outputDirectory": "docs",
   "rewrites": [
     {
       "source": "/((?!sitemap\\.xml|robots\\.txt).*)",
